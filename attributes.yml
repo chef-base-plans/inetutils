@@ -1,1 +1,1 @@
-command_path: '/bin/ping'
+command_relative_path: '/bin/ping'
