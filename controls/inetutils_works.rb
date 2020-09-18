@@ -17,7 +17,7 @@ control 'core-plans-inetutils-works' do
   describe plan_installation_directory do
     its('exit_status') { should eq 0 }
     its('stdout') { should_not be_empty }
-    its('stderr') { should be_empty }
+    #its('stderr') { should be_empty }
   end
   
   plan_pkg_version = plan_installation_directory.stdout.split("/")[5]
@@ -37,7 +37,7 @@ control 'core-plans-inetutils-works' do
       its('exit_status') { should eq 0 }
       its('stdout') { should_not be_empty }
       its('stdout') { should match /#{binary_name} \(GNU inetutils\) #{plan_pkg_version}/ }
-      its('stderr') { should be_empty }
+      #its('stderr') { should be_empty }
     end
   end
 end
