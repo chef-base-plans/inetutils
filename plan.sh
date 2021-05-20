@@ -48,7 +48,7 @@ do_build() {
     --disable-rlogin \
     --disable-rsh \
     --disable-servers
-  make
+  make LDFLAGS="$LDFLAGS -Wl,--copy-dt-needed-entries"
 }
 
 do_install() {
