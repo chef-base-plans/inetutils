@@ -1,6 +1,6 @@
 pkg_name=inetutils
 pkg_origin=core
-pkg_version=1.9.4
+pkg_version=2.2
 pkg_maintainer="The Habitat Maintainers <humans@habitat.sh>"
 pkg_description="\
 Inetutils is a collection of common network programs. It includes: an ftp \
@@ -10,7 +10,7 @@ rlogin client and server, a tftp client and server, and much more...\
 pkg_upstream_url="http://www.gnu.org/software/inetutils/"
 pkg_license=('GPL-3.0-or-later')
 pkg_source="http://ftp.gnu.org/gnu/$pkg_name/${pkg_name}-${pkg_version}.tar.xz"
-pkg_shasum="849d96f136effdef69548a940e3e0ec0624fc0c81265296987986a0dd36ded37"
+pkg_shasum="d547f69172df73afef691a0f7886280fd781acea28def4ff4b4b212086a89d80"
 pkg_deps=(
   core/glibc
   core/libcap
